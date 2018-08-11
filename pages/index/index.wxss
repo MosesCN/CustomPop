@@ -1,0 +1,69 @@
+/**index.wxss**/
+page{
+  width: 100%;
+  height: 100%;
+}
+
+ /* 遮罩层 */
+.mask{
+  width: 100%;
+  height: 100%; /*宽高 100% 铺满屏幕 */
+  background: #000;
+  opacity: 0.5;
+  z-index: 9000;
+}
+ 
+.modalDlg{
+  width: 90%;
+  height: 50%;
+  z-index: 9900;  /* 要比遮罩层的大 */
+  background-color: #FFA07A;
+  border-radius: 30rpx;
+  position: fixed; /* 生成绝对定位的元素，相对于浏览器窗口进行定位。 */
+  top: 10%;
+  left: 5%;  /* (100% - width)/2 */
+}
+
+
+.box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  
+}
+
+.msg-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  margin: 10rpx;
+}
+
+.msg{
+  margin: 20rpx;
+}
+
+.line{
+  width: 90%;
+  height: 1rpx;
+  background-color:gray; 
+}
+
+.btn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn-cancle {
+  margin: 30rpx;
+}
+
+.btn-confirm{
+  margin: 30rpx;
+}
